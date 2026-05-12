@@ -26,7 +26,7 @@ data "aws_ami" "amazon_linux_2025" {
 
 resource "aws_instance" "public_instance" {
   ami           = data.aws_ami.amazon_linux_2025.id
-  instance_type = var.instance_type
+  instance_type = var.ec2_instance_type
   tags = {
     Name = "public-instance"
     env  = "prod"
