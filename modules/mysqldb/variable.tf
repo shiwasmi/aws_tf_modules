@@ -5,12 +5,12 @@ variable "db_name" {
 
 variable "db_username" {
   type        = string
-  description = "Username for the database"
+  description = "Username for the MySQL database"
 }
 
 variable "db_password" {
   type        = string
-  description = "Password for the database"
+  description = "Password for the MySQL database"
   sensitive   = true
 }
 
